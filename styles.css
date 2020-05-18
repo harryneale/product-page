@@ -53,6 +53,22 @@ body {
       padding: 0 50px;
       font-family: arial;
     }
+
+   nav > ul {
+    max-width: 720px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color:darkgray;
+}
      
   /* Subscribe section */
   #subscribe {
@@ -62,14 +78,19 @@ body {
     justify-content: center;
     text-align: center;
     height: 200px;
-    margin-top: 50px;
+    margin-top: 75px;
+    
   }
   
   #subscribe > h2 {
     margin-bottom: 0;
     word-wrap: break-word;
   }
-  
+
+  #email {
+    margin: 10px 0;
+  }
+
   form {
     display: flex;
     flex-direction: column;
@@ -82,14 +103,15 @@ body {
   }
   
   #features {
-    margin-top: 30px;  
+    margin-top: 0px;  
   }
   
   #features .icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 42px;
+    padding-top: 7.5px;
+    font-size: 45px;
     height: 125px;
     width: 20vw;
     color: darkorange;
@@ -122,4 +144,15 @@ body {
   * {
     padding: 0;
     margin: 0;
+  }
+
+  #video {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;  
+  }
+
+  #video > iframe {
+    max-width: 520px;
+    width: 100%;
   }
